@@ -6,8 +6,8 @@ public class UserInput {
 	public void inputValue(String user) {
 		int temp = Integer.parseInt(user); //스트링을 정수로 변환함.
 		my[0] = temp / 100;// 백자리를 받는다.
-		my[1] = (temp % 100) / 10;// 십자리를 받는다.
-		my[2] = temp % 10;
+		my[1] = (temp % 100) / 10;// 십자리를 받는다. 78/10 ->7
+		my[2] = temp % 10;// 578을 10으로 나눈 나머지. 
 	}
 
 	public static void main(String[] args) {//메인메소드
